@@ -7,9 +7,9 @@ const int STBY = 8;
 const int PWMA = 5, PWMB = 6; // Left/Right PWM
 
 // --- Ultrasonic Pins ---
-const int trigF = 10, echoF = 11;   // Forward
-const int trigL = 14, echoL = 15;   // Left
-const int trigR = 12, echoR = 13;   // Right
+const int trigF = 12, echoF = 13;   // Forward
+const int trigL = 10, echoL = 11;   // Left
+const int trigR = 14, echoR = 15;   // Right
 
 // --- Button for STBY ---
 const int buttonPin = 9;
@@ -17,7 +17,7 @@ bool motorsEnabled = false;
 unsigned long lastButtonPress = 0;   // debounce timer
 
 // --- PID parameters (yours) ---
-float Kp = 1.824, Ki = 0.0001, Kd = 0.4;
+float Kp = 1.2, Ki = 0.0001, Kd = 0.7;
 float error = 0, prevError = 0, integral = 0;
 int baseSpeed = 150;                 // adjust for your motors
 
